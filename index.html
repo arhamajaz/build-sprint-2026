@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -9,13 +10,16 @@
 
   <!-- SEO -->
   <title>BuildSprint 2026 · Startup Ideation & Innovation Challenge · BIT Mesra, Patna Campus</title>
-  <meta name="description" content="BuildSprint 2026 is a two-day inter-college startup ideation and innovation challenge hosted by the Department of Management Studies & Prabandhanam Society, BIT Mesra, Patna Campus. 5-6 September 2026.">
-  <meta name="keywords" content="BuildSprint, startup challenge, BIT Mesra, Patna, innovation, ideation, hackathon, prototype, 2026, Prabandhanam, Department of Management Studies, Danish Iqbal, Hemant Raj">
+  <meta name="description"
+    content="BuildSprint 2026 is a two-day inter-college startup ideation and innovation challenge hosted by the Department of Management Studies & Prabandhanam Society, BIT Mesra, Patna Campus. 5-6 September 2026.">
+  <meta name="keywords"
+    content="BuildSprint, startup challenge, BIT Mesra, Patna, innovation, ideation, hackathon, prototype, 2026, Prabandhanam, Department of Management Studies, Danish Iqbal, Hemant Raj">
   <meta name="author" content="Prabandhanam Society, Department of Management Studies, BIT Mesra Patna Campus">
 
   <!-- Open Graph -->
   <meta property="og:title" content="BuildSprint 2026 · Startup Innovation Challenge">
-  <meta property="og:description" content="A two-day startup ideation and innovation challenge. 5-6 September 2026 at BIT Mesra, Patna Campus.">
+  <meta property="og:description"
+    content="A two-day startup ideation and innovation challenge. 5-6 September 2026 at BIT Mesra, Patna Campus.">
   <meta property="og:image" content="event logo.jpg">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BuildSprint 2026">
@@ -23,7 +27,8 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BuildSprint 2026">
-  <meta name="twitter:description" content="Two-day startup ideation and innovation challenge at BIT Mesra Patna. 5-6 September 2026.">
+  <meta name="twitter:description"
+    content="Two-day startup ideation and innovation challenge at BIT Mesra Patna. 5-6 September 2026.">
   <meta name="twitter:image" content="event logo.jpg">
 
   <!-- Favicon -->
@@ -32,7 +37,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -64,7 +71,11 @@
     }
 
     /* ===== RESET ===== */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -83,11 +94,27 @@
       padding-right: env(safe-area-inset-right);
     }
 
-    img { display: block; max-width: 100%; height: auto; }
-    a { color: inherit; text-decoration: none; }
-    button { font-family: inherit; cursor: pointer; border: none; }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
 
-    ::selection { background: var(--violet); color: white; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+    }
+
+    ::selection {
+      background: var(--violet);
+      color: white;
+    }
 
     /* ===== LOADER OVERLAY ===== */
     .loader {
@@ -101,17 +128,20 @@
       z-index: 9999;
       transition: opacity 0.5s ease, visibility 0.5s ease;
     }
+
     .loader.hidden {
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
     }
+
     .loader-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
     }
+
     .loader-logo-img {
       width: 72px;
       height: 72px;
@@ -119,10 +149,21 @@
       box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
       animation: pulse-glow 2s ease-in-out infinite;
     }
+
     @keyframes pulse-glow {
-      0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(139, 92, 246, 0.6); }
-      50% { transform: scale(1.08); box-shadow: 0 0 50px rgba(236, 72, 153, 0.8); }
+
+      0%,
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+      }
+
+      50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 50px rgba(236, 72, 153, 0.8);
+      }
     }
+
     .loader-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 28px;
@@ -133,15 +174,21 @@
       -webkit-text-fill-color: transparent;
       letter-spacing: -0.02em;
     }
+
     .loader-spinner {
       width: 36px;
       height: 36px;
-      border: 3px solid rgba(255,255,255,0.1);
+      border: 3px solid rgba(255, 255, 255, 0.1);
       border-top-color: var(--violet);
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
     /* ===== BACKGROUND BLOBS ===== */
     .blob {
@@ -153,36 +200,69 @@
       z-index: 0;
       will-change: transform;
     }
+
     .blob-1 {
-      width: 500px; height: 500px;
+      width: 500px;
+      height: 500px;
       background: radial-gradient(circle, #6366f1 0%, transparent 70%);
-      top: -100px; left: -100px;
+      top: -100px;
+      left: -100px;
       animation: float1 22s ease-in-out infinite;
     }
+
     .blob-2 {
-      width: 600px; height: 600px;
+      width: 600px;
+      height: 600px;
       background: radial-gradient(circle, #a855f7 0%, transparent 70%);
-      top: 40%; right: -150px;
+      top: 40%;
+      right: -150px;
       animation: float2 28s ease-in-out infinite;
     }
+
     .blob-3 {
-      width: 450px; height: 450px;
+      width: 450px;
+      height: 450px;
       background: radial-gradient(circle, #ec4899 0%, transparent 70%);
-      bottom: 10%; left: 30%;
+      bottom: 10%;
+      left: 30%;
       animation: float3 25s ease-in-out infinite;
       opacity: 0.2;
     }
+
     @keyframes float1 {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(120px, 80px) scale(1.1); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(120px, 80px) scale(1.1);
+      }
     }
+
     @keyframes float2 {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(-100px, -60px) scale(0.95); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(-100px, -60px) scale(0.95);
+      }
     }
+
     @keyframes float3 {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(60px, -80px) scale(1.1); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(60px, -80px) scale(1.1);
+      }
     }
 
     /* ===== TOP AFFILIATION BAR (CENTERED MINIMALIST) ===== */
@@ -196,6 +276,7 @@
       z-index: 101;
       text-align: center;
     }
+
     .top-affiliation-container {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -203,6 +284,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .affiliation-brand {
       display: flex;
       align-items: center;
@@ -211,6 +293,7 @@
       font-weight: 500;
       color: var(--text);
     }
+
     .affiliation-logo {
       height: 26px;
       width: auto;
@@ -234,10 +317,12 @@
       border-bottom: 1px solid var(--border);
       padding: 12px 0;
     }
+
     nav.scrolled {
       background: rgba(6, 6, 15, 0.95);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
+
     .nav-container {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -246,6 +331,7 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .nav-logo {
       display: flex;
       align-items: center;
@@ -255,6 +341,7 @@
       font-weight: 700;
       letter-spacing: -0.02em;
     }
+
     .nav-logo-img {
       width: 36px;
       height: 36px;
@@ -262,11 +349,13 @@
       object-fit: cover;
       box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
     }
+
     .nav-links {
       display: flex;
       gap: 6px;
       list-style: none;
     }
+
     .nav-links a {
       display: block;
       padding: 8px 14px;
@@ -276,15 +365,18 @@
       transition: all 0.2s ease;
       font-weight: 500;
     }
+
     .nav-links a:hover {
       color: var(--text);
       background: var(--surface);
     }
+
     .nav-actions {
       display: flex;
       align-items: center;
       gap: 10px;
     }
+
     .nav-cta {
       background: var(--accent-grad);
       color: white;
@@ -295,10 +387,12 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
     }
+
     .nav-cta:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-glow);
     }
+
     .nav-pdf-btn {
       background: var(--surface);
       border: 1px solid var(--border-strong);
@@ -312,10 +406,12 @@
       gap: 6px;
       transition: all 0.2s ease;
     }
+
     .nav-pdf-btn:hover {
       background: var(--surface-2);
       border-color: var(--violet);
     }
+
     .nav-mobile-toggle {
       display: none;
       background: none;
@@ -331,6 +427,7 @@
       z-index: 2;
       overflow: hidden;
     }
+
     .hero-grid {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -339,9 +436,11 @@
       gap: 48px;
       align-items: center;
     }
+
     .hero-left {
       z-index: 3;
     }
+
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -356,12 +455,14 @@
       margin-bottom: 24px;
       backdrop-filter: blur(12px);
     }
+
     .hero-badge-img {
       width: 22px;
       height: 22px;
       border-radius: 50%;
       object-fit: cover;
     }
+
     .hero-badge .pulse {
       width: 8px;
       height: 8px;
@@ -370,10 +471,19 @@
       box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
       animation: pulse 2s ease-in-out infinite;
     }
+
     @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.4;
+      }
     }
+
     h1.hero-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(42px, 5.5vw, 84px);
@@ -382,12 +492,14 @@
       letter-spacing: -0.04em;
       margin-bottom: 16px;
     }
+
     h1.hero-title .grad {
       background: var(--accent-grad);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .hero-sub {
       font-size: clamp(20px, 2vw, 26px);
       color: var(--text);
@@ -395,22 +507,26 @@
       font-weight: 600;
       letter-spacing: 0.02em;
     }
+
     .hero-sub .sep {
       color: var(--violet);
       margin: 0 8px;
     }
+
     .hero-desc {
       font-size: 16px;
       color: var(--text-dim);
       margin-bottom: 32px;
       line-height: 1.65;
     }
+
     .hero-actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-bottom: 40px;
     }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -423,36 +539,43 @@
       cursor: pointer;
       white-space: nowrap;
     }
+
     .btn-sm {
       padding: 10px 18px;
       font-size: 13px;
       border-radius: 10px;
     }
+
     .btn-primary {
       background: var(--accent-grad);
       color: white;
       box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.6);
     }
+
     .btn-primary:hover {
       transform: translateY(-2px);
       box-shadow: 0 15px 40px -10px rgba(139, 92, 246, 0.8);
     }
+
     .btn-secondary {
       background: var(--surface);
       color: var(--text);
       border: 1px solid var(--border-strong);
       backdrop-filter: blur(10px);
     }
+
     .btn-secondary:hover {
       background: var(--surface-2);
       transform: translateY(-2px);
       border-color: var(--violet);
     }
+
     .btn-emerald {
       background: linear-gradient(135deg, #10b981 0%, #059669 100%);
       color: white;
       box-shadow: 0 8px 25px -8px rgba(16, 185, 129, 0.5);
     }
+
     .btn-emerald:hover {
       transform: translateY(-2px);
       box-shadow: 0 12px 35px -8px rgba(16, 185, 129, 0.7);
@@ -467,6 +590,7 @@
       align-items: center;
       width: 100%;
     }
+
     .video-card-wrap {
       position: relative;
       width: 100%;
@@ -481,10 +605,12 @@
       display: flex;
       flex-direction: column;
     }
+
     .video-card-wrap:hover {
       transform: translateY(-4px) scale(1.01);
       border-color: rgba(168, 85, 247, 0.6);
     }
+
     .hero-video-player {
       width: 100%;
       height: auto;
@@ -493,6 +619,7 @@
       filter: saturate(1.15) contrast(1.05);
       border-radius: 24px 24px 0 0;
     }
+
     .video-caption-bar {
       padding: 14px 20px;
       background: rgba(10, 10, 26, 0.95);
@@ -502,11 +629,13 @@
       justify-content: space-between;
       color: white;
     }
+
     .video-badge-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 15px;
       font-weight: 700;
     }
+
     .video-badge-sub {
       font-size: 12px;
       color: var(--text-dim);
@@ -519,6 +648,7 @@
       gap: 12px;
       max-width: 520px;
     }
+
     .countdown-item {
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--border-strong);
@@ -527,6 +657,7 @@
       text-align: center;
       backdrop-filter: blur(20px);
     }
+
     .countdown-value {
       font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(26px, 3.5vw, 38px);
@@ -538,6 +669,7 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 4px;
     }
+
     .countdown-label {
       font-size: 11px;
       color: var(--text-muted);
@@ -552,14 +684,17 @@
       position: relative;
       z-index: 2;
     }
+
     .container {
       max-width: var(--max-w);
       margin: 0 auto;
     }
+
     .section-header {
       text-align: center;
       margin-bottom: 56px;
     }
+
     .section-eyebrow {
       display: inline-block;
       color: var(--violet);
@@ -569,6 +704,7 @@
       text-transform: uppercase;
       margin-bottom: 12px;
     }
+
     h2.section-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(32px, 5vw, 50px);
@@ -577,6 +713,7 @@
       line-height: 1.1;
       margin-bottom: 16px;
     }
+
     .section-lede {
       font-size: 18px;
       color: var(--text-dim);
@@ -592,13 +729,15 @@
       border-radius: var(--radius);
       padding: 40px;
       backdrop-filter: blur(20px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
       max-width: 880px;
       margin: 0 auto;
     }
+
     .documents-card-header {
       text-align: center;
     }
+
     .documents-badge {
       display: inline-flex;
       align-items: center;
@@ -614,12 +753,14 @@
       letter-spacing: 0.12em;
       margin-bottom: 16px;
     }
+
     .documents-card-header h3 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 32px;
       font-weight: 700;
       margin-bottom: 12px;
     }
+
     .documents-card-header p {
       color: var(--text-dim);
       font-size: 16px;
@@ -627,19 +768,22 @@
       max-width: 680px;
       margin: 0 auto;
     }
+
     .poster-highlights {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 14px;
       margin-top: 24px;
     }
+
     .poster-highlight-item {
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 14px 16px;
       text-align: center;
     }
+
     .poster-highlight-label {
       font-size: 11px;
       color: var(--violet);
@@ -647,6 +791,7 @@
       letter-spacing: 0.12em;
       font-weight: 700;
     }
+
     .poster-highlight-val {
       font-size: 16px;
       font-weight: 600;
@@ -660,6 +805,7 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 16px;
     }
+
     .info-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -670,23 +816,28 @@
       position: relative;
       overflow: hidden;
     }
+
     .info-card::before {
       content: "";
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(139,92,246,0.5), transparent);
+      background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.5), transparent);
     }
+
     .info-card:hover {
       transform: translateY(-4px);
       border-color: rgba(139, 92, 246, 0.3);
     }
+
     .info-icon {
       width: 44px;
       height: 44px;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.15));
-      border: 1px solid rgba(139,92,246,0.25);
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15));
+      border: 1px solid rgba(139, 92, 246, 0.25);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -694,6 +845,7 @@
       color: var(--violet);
       margin-bottom: 20px;
     }
+
     .info-label {
       font-size: 12px;
       color: var(--text-muted);
@@ -702,11 +854,13 @@
       font-weight: 600;
       margin-bottom: 8px;
     }
+
     .info-value {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 22px;
       font-weight: 600;
     }
+
     .info-sub {
       color: var(--text-dim);
       font-size: 14px;
@@ -720,6 +874,7 @@
       gap: 16px;
       margin-top: 40px;
     }
+
     .about-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -731,10 +886,12 @@
       backdrop-filter: blur(20px);
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
+
     .about-card:hover {
-      border-color: rgba(139,92,246,0.3);
+      border-color: rgba(139, 92, 246, 0.3);
       transform: translateY(-3px);
     }
+
     .about-num {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 24px;
@@ -746,11 +903,13 @@
       line-height: 1;
       min-width: 32px;
     }
+
     .about-card h4 {
       font-size: 15px;
       font-weight: 600;
       margin-bottom: 4px;
     }
+
     .about-card p {
       font-size: 13px;
       color: var(--text-dim);
@@ -763,6 +922,7 @@
       max-width: 820px;
       margin: 0 auto;
     }
+
     .timeline::before {
       content: "";
       position: absolute;
@@ -772,11 +932,13 @@
       width: 2px;
       background: linear-gradient(180deg, var(--indigo), var(--purple), transparent);
     }
+
     .timeline-day {
       margin-bottom: 56px;
       position: relative;
       padding-left: 60px;
     }
+
     .timeline-day-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 24px;
@@ -786,6 +948,7 @@
       align-items: center;
       gap: 12px;
     }
+
     .timeline-day-title .badge {
       background: var(--accent-grad);
       color: white;
@@ -795,11 +958,13 @@
       font-weight: 600;
       letter-spacing: 0.1em;
     }
+
     .timeline-day-date {
       color: var(--text-dim);
       font-size: 14px;
       margin-bottom: 24px;
     }
+
     .timeline-item {
       position: relative;
       background: var(--surface);
@@ -813,6 +978,7 @@
       align-items: center;
       gap: 14px;
     }
+
     .timeline-item::before {
       content: "";
       position: absolute;
@@ -824,12 +990,14 @@
       border-radius: 50%;
       background: var(--bg);
       border: 2px solid var(--violet);
-      box-shadow: 0 0 12px rgba(139,92,246,0.5);
+      box-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
     }
+
     .timeline-item:hover {
-      border-color: rgba(139,92,246,0.3);
+      border-color: rgba(139, 92, 246, 0.3);
       transform: translateX(4px);
     }
+
     .timeline-time {
       color: var(--violet);
       font-size: 12px;
@@ -837,6 +1005,7 @@
       letter-spacing: 0.08em;
       min-width: 90px;
     }
+
     .timeline-text {
       font-size: 15px;
       color: var(--text);
@@ -849,6 +1018,7 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
     }
+
     .why-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -859,10 +1029,12 @@
       position: relative;
       overflow: hidden;
     }
+
     .why-card:hover {
-      border-color: rgba(139,92,246,0.3);
+      border-color: rgba(139, 92, 246, 0.3);
       transform: translateY(-4px);
     }
+
     .why-icon {
       width: 48px;
       height: 48px;
@@ -870,17 +1042,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.15));
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15));
       color: var(--violet);
       font-size: 20px;
       margin-bottom: 20px;
-      border: 1px solid rgba(139,92,246,0.25);
+      border: 1px solid rgba(139, 92, 246, 0.25);
     }
+
     .why-card h4 {
       font-size: 17px;
       font-weight: 600;
       margin-bottom: 8px;
     }
+
     .why-card p {
       font-size: 14px;
       color: var(--text-dim);
@@ -893,6 +1067,7 @@
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
     }
+
     .criteria-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -902,18 +1077,27 @@
       backdrop-filter: blur(20px);
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
+
     .criteria-card:hover {
-      border-color: rgba(139,92,246,0.3);
+      border-color: rgba(139, 92, 246, 0.3);
       transform: translateY(-3px);
     }
+
     .progress-ring {
       width: 100px;
       height: 100px;
       margin: 0 auto 16px;
       position: relative;
     }
-    .progress-ring svg { transform: rotate(-90deg); }
-    .progress-ring-bg { stroke: rgba(255,255,255,0.14); }
+
+    .progress-ring svg {
+      transform: rotate(-90deg);
+    }
+
+    .progress-ring-bg {
+      stroke: rgba(255, 255, 255, 0.14);
+    }
+
     .progress-ring-fill {
       stroke: url(#grad);
       stroke-linecap: round;
@@ -921,6 +1105,7 @@
       stroke-dashoffset: 283;
       transition: stroke-dashoffset 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     .progress-value {
       position: absolute;
       inset: 0;
@@ -935,12 +1120,14 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     /* ===== PARTNERS & SPONSORS SECTION ===== */
     .partners-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     .partner-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -954,11 +1141,13 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .partner-card:hover {
       border-color: var(--violet);
       transform: translateY(-4px);
       box-shadow: 0 15px 35px rgba(139, 92, 246, 0.2);
     }
+
     .partner-logo-box {
       width: 76px;
       height: 76px;
@@ -971,12 +1160,14 @@
       margin-bottom: 18px;
       padding: 8px;
     }
+
     .partner-logo-img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
       border-radius: 8px;
     }
+
     .partner-category {
       font-size: 11px;
       color: var(--cyan);
@@ -985,6 +1176,7 @@
       text-transform: uppercase;
       margin-bottom: 4px;
     }
+
     .partner-name {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 18px;
@@ -992,6 +1184,7 @@
       color: var(--text);
       margin-bottom: 6px;
     }
+
     .partner-desc {
       font-size: 13px;
       color: var(--text-dim);
@@ -1006,6 +1199,7 @@
       max-width: 840px;
       margin: 0 auto;
     }
+
     .contact-card {
       background: var(--surface);
       border: 1px solid var(--border-strong);
@@ -1017,15 +1211,17 @@
       align-items: flex-start;
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
+
     .contact-card:hover {
       border-color: var(--violet);
       transform: translateY(-3px);
     }
+
     .contact-avatar {
       width: 54px;
       height: 54px;
       border-radius: 50%;
-      background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(168,85,247,0.2));
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
       border: 1px solid var(--violet);
       display: flex;
       align-items: center;
@@ -1034,6 +1230,7 @@
       font-size: 22px;
       flex-shrink: 0;
     }
+
     .contact-role {
       font-size: 11px;
       color: var(--cyan);
@@ -1042,6 +1239,7 @@
       text-transform: uppercase;
       margin-bottom: 2px;
     }
+
     .contact-name {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 20px;
@@ -1049,11 +1247,13 @@
       color: var(--text);
       margin-bottom: 4px;
     }
+
     .contact-note {
       font-size: 13px;
       color: var(--text-dim);
       margin-bottom: 16px;
     }
+
     .contact-actions {
       display: flex;
       flex-direction: column;
@@ -1067,6 +1267,7 @@
       display: grid;
       gap: 20px;
     }
+
     .guide-block {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -1075,19 +1276,24 @@
       backdrop-filter: blur(20px);
       transition: border-color 0.3s ease;
     }
-    .guide-block:hover { border-color: rgba(139,92,246,0.3); }
+
+    .guide-block:hover {
+      border-color: rgba(139, 92, 246, 0.3);
+    }
+
     .guide-block-head {
       display: flex;
       gap: 18px;
       align-items: center;
       margin-bottom: 20px;
     }
+
     .guide-icon {
       width: 52px;
       height: 52px;
       border-radius: 14px;
-      background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(139,92,246,0.18));
-      border: 1px solid rgba(139,92,246,0.28);
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.18), rgba(139, 92, 246, 0.18));
+      border: 1px solid rgba(139, 92, 246, 0.28);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1095,6 +1301,7 @@
       font-size: 20px;
       flex-shrink: 0;
     }
+
     .guide-tag {
       color: var(--violet);
       font-size: 11px;
@@ -1103,34 +1310,39 @@
       text-transform: uppercase;
       margin-bottom: 4px;
     }
+
     .guide-block h3 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 24px;
       font-weight: 700;
       line-height: 1.15;
     }
+
     .guide-para {
       color: var(--text-dim);
       font-size: 15px;
       line-height: 1.65;
       margin-bottom: 16px;
     }
+
     .guide-list {
       list-style: none;
       display: grid;
       gap: 8px;
     }
+
     .guide-list li {
       display: flex;
       align-items: center;
       gap: 14px;
       padding: 12px 16px;
-      background: rgba(255,255,255,0.02);
+      background: rgba(255, 255, 255, 0.02);
       border: 1px solid var(--border);
       border-radius: 10px;
       color: var(--text);
       font-size: 14px;
     }
+
     .li-num {
       font-family: 'Space Grotesk', sans-serif;
       color: var(--violet);
@@ -1144,6 +1356,7 @@
       max-width: 780px;
       margin: 0 auto;
     }
+
     .faq-item {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -1153,7 +1366,11 @@
       backdrop-filter: blur(20px);
       transition: border-color 0.3s ease;
     }
-    .faq-item.open { border-color: rgba(139,92,246,0.3); }
+
+    .faq-item.open {
+      border-color: rgba(139, 92, 246, 0.3);
+    }
+
     .faq-q {
       display: flex;
       justify-content: space-between;
@@ -1166,12 +1383,20 @@
       font-weight: 500;
       text-align: left;
     }
-    .faq-q:hover { background: var(--surface-2); }
+
+    .faq-q:hover {
+      background: var(--surface-2);
+    }
+
     .faq-q i {
       color: var(--violet);
       transition: transform 0.3s ease;
     }
-    .faq-item.open .faq-q i { transform: rotate(180deg); }
+
+    .faq-item.open .faq-q i {
+      transform: rotate(180deg);
+    }
+
     .faq-a {
       max-height: 0;
       overflow: hidden;
@@ -1181,6 +1406,7 @@
       font-size: 15px;
       line-height: 1.65;
     }
+
     .faq-item.open .faq-a {
       max-height: 300px;
       padding: 0 24px 20px;
@@ -1192,7 +1418,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 24px;
     }
-    .register-card, .whatsapp-card {
+
+    .register-card,
+    .whatsapp-card {
       background: var(--surface);
       border: 1px solid var(--border-strong);
       border-radius: var(--radius);
@@ -1204,12 +1432,15 @@
       position: relative;
       overflow: hidden;
     }
+
     .register-card {
-      background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(138,92,246,0.12), rgba(236,72,153,0.1));
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(138, 92, 246, 0.12), rgba(236, 72, 153, 0.1));
     }
+
     .whatsapp-card {
-      background: linear-gradient(135deg, rgba(37,211,102,0.12), rgba(16,185,129,0.1), rgba(10,10,26,0.8));
+      background: linear-gradient(135deg, rgba(37, 211, 102, 0.12), rgba(16, 185, 129, 0.1), rgba(10, 10, 26, 0.8));
     }
+
     .qr-preview-box {
       width: 140px;
       height: 140px;
@@ -1217,13 +1448,15 @@
       border-radius: 12px;
       padding: 8px;
       cursor: pointer;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
       transition: transform 0.25s ease;
       margin-top: 16px;
     }
+
     .qr-preview-box:hover {
       transform: scale(1.05);
     }
+
     .qr-preview-box img {
       width: 100%;
       height: 100%;
@@ -1241,21 +1474,24 @@
       margin: 0 auto;
       backdrop-filter: blur(20px);
     }
+
     .organised-logo {
       width: 90px;
       height: 90px;
       border-radius: 50%;
       object-fit: cover;
       margin: 0 auto 20px;
-      box-shadow: 0 0 25px rgba(139,92,246,0.4);
+      box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
       border: 2px solid var(--violet);
     }
+
     .organised-card h3 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 26px;
       font-weight: 700;
       margin-bottom: 8px;
     }
+
     .organised-card .line {
       color: var(--text-dim);
       font-size: 15px;
@@ -1270,6 +1506,7 @@
       position: relative;
       z-index: 2;
     }
+
     .footer-container {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -1278,6 +1515,7 @@
       gap: 40px;
       margin-bottom: 40px;
     }
+
     .footer-brand-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 22px;
@@ -1288,6 +1526,7 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 12px;
     }
+
     .footer-desc {
       color: var(--text-dim);
       font-size: 14px;
@@ -1295,11 +1534,13 @@
       margin-bottom: 16px;
       max-width: 360px;
     }
+
     .footer-logos {
       display: flex;
       align-items: center;
       gap: 12px;
     }
+
     .footer-logo-img {
       height: 36px;
       width: auto;
@@ -1308,6 +1549,7 @@
       background: white;
       padding: 3px;
     }
+
     .footer-heading {
       font-size: 14px;
       font-weight: 700;
@@ -1316,17 +1558,23 @@
       letter-spacing: 0.1em;
       margin-bottom: 16px;
     }
+
     .footer-links {
       list-style: none;
       display: grid;
       gap: 10px;
     }
+
     .footer-links a {
       color: var(--text-dim);
       font-size: 14px;
       transition: color 0.2s ease;
     }
-    .footer-links a:hover { color: white; }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
     .footer-bottom {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -1356,10 +1604,12 @@
       visibility: hidden;
       transition: opacity 0.3s ease, visibility 0.3s ease;
     }
+
     .lightbox-modal.active {
       opacity: 1;
       visibility: visible;
     }
+
     .lightbox-content {
       position: relative;
       max-width: 90vw;
@@ -1368,20 +1618,23 @@
       flex-direction: column;
       align-items: center;
     }
+
     .lightbox-img {
       max-width: 100%;
       max-height: 80vh;
       object-fit: contain;
       border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
       border: 1px solid var(--border-strong);
     }
+
     .lightbox-caption {
       margin-top: 12px;
       color: var(--text);
       font-size: 15px;
       font-weight: 600;
     }
+
     .lightbox-close {
       position: absolute;
       top: -40px;
@@ -1410,13 +1663,15 @@
       transform: translateY(20px);
       transition: all 0.3s ease;
       z-index: 90;
-      box-shadow: 0 10px 30px rgba(139,92,246,0.5);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.5);
     }
+
     .back-top.visible {
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
     }
+
     .back-top:hover {
       transform: translateY(-4px);
     }
@@ -1427,6 +1682,7 @@
       transform: translateY(24px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
+
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
@@ -1434,19 +1690,52 @@
 
     /* ===== COMPREHENSIVE RESPONSIVE BREAKPOINTS ===== */
     @media (max-width: 1024px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-      .hero-right { order: 2; }
-      .hero-left { order: 1; }
-      .register-wrap { grid-template-columns: 1fr; }
-      .help-grid { grid-template-columns: 1fr; }
-      .footer-container { grid-template-columns: 1fr 1fr; gap: 36px; }
-      .documents-card { padding: 32px 24px; }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero-right {
+        order: 2;
+      }
+
+      .hero-left {
+        order: 1;
+      }
+
+      .register-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .help-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+      }
+
+      .documents-card {
+        padding: 32px 24px;
+      }
     }
 
     @media (max-width: 900px) {
-      .nav-links, .nav-actions { display: none; }
-      .nav-mobile-toggle { display: block; }
-      .nav-mobile-only { display: block !important; }
+
+      .nav-links,
+      .nav-actions {
+        display: none;
+      }
+
+      .nav-mobile-toggle {
+        display: block;
+      }
+
+      .nav-mobile-only {
+        display: block !important;
+      }
+
       .nav-links.open {
         display: flex;
         position: absolute;
@@ -1460,61 +1749,185 @@
         padding: 20px 24px;
         gap: 10px;
         border-top: 1px solid var(--border);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
       }
-      .top-affiliation-bar { padding: 8px 14px; font-size: 12px; }
-      .affiliation-brand { flex-wrap: wrap; text-align: center; }
-      section { padding: 60px 20px; }
-      .hero { padding: 40px 20px 50px; }
-      .blob { filter: blur(50px); opacity: 0.2; }
+
+      .top-affiliation-bar {
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+
+      .affiliation-brand {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+      .hero {
+        padding: 40px 20px 50px;
+      }
+
+      .blob {
+        filter: blur(50px);
+        opacity: 0.2;
+      }
     }
 
     @media (max-width: 640px) {
-      .footer-container { grid-template-columns: 1fr; gap: 32px; }
-      .timeline { padding-left: 0; }
-      .timeline::before { left: 14px; }
-      .timeline-day { padding-left: 36px; }
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .timeline {
+        padding-left: 0;
+      }
+
+      .timeline::before {
+        left: 14px;
+      }
+
+      .timeline-day {
+        padding-left: 36px;
+      }
+
       .timeline-item {
         padding: 14px 16px;
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
       }
-      .timeline-item::before { left: -28px; }
-      .timeline-time { min-width: auto; }
-      .poster-highlights { grid-template-columns: 1fr 1fr; gap: 10px; }
-      .criteria-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .countdown { gap: 8px; }
-      .countdown-item { padding: 12px 6px; }
-      .countdown-value { font-size: clamp(20px, 6vw, 32px); }
+
+      .timeline-item::before {
+        left: -28px;
+      }
+
+      .timeline-time {
+        min-width: auto;
+      }
+
+      .poster-highlights {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .criteria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .countdown {
+        gap: 8px;
+      }
+
+      .countdown-item {
+        padding: 12px 6px;
+      }
+
+      .countdown-value {
+        font-size: clamp(20px, 6vw, 32px);
+      }
     }
 
     @media (max-width: 480px) {
-      .top-affiliation-bar { font-size: 11px; padding: 6px 10px; }
-      .hero-title { font-size: clamp(32px, 8vw, 44px); }
-      .hero-sub { font-size: 18px; }
-      .hero-desc { font-size: 14px; }
-      .btn { width: 100%; justify-content: center; font-size: 14px; padding: 12px 18px; }
-      .hero-actions { flex-direction: column; width: 100%; }
-      .contact-card { flex-direction: column; padding: 22px 18px; }
-      .contact-avatar { margin-bottom: 4px; }
-      .register-card, .whatsapp-card { padding: 24px 18px; }
-      .qr-preview-box { width: 120px; height: 120px; margin: 12px auto 0; }
-      .poster-highlights { grid-template-columns: 1fr; }
-      .documents-card { padding: 24px 16px; }
-      .info-grid { grid-template-columns: 1fr; }
-      .about-grid { grid-template-columns: 1fr; }
-      .why-grid { grid-template-columns: 1fr; }
-      .back-top { bottom: 20px; right: 20px; width: 42px; height: 42px; }
+      .top-affiliation-bar {
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+
+      .hero-title {
+        font-size: clamp(32px, 8vw, 44px);
+      }
+
+      .hero-sub {
+        font-size: 18px;
+      }
+
+      .hero-desc {
+        font-size: 14px;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+        padding: 12px 18px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .contact-card {
+        flex-direction: column;
+        padding: 22px 18px;
+      }
+
+      .contact-avatar {
+        margin-bottom: 4px;
+      }
+
+      .register-card,
+      .whatsapp-card {
+        padding: 24px 18px;
+      }
+
+      .qr-preview-box {
+        width: 120px;
+        height: 120px;
+        margin: 12px auto 0;
+      }
+
+      .poster-highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .documents-card {
+        padding: 24px 16px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .back-top {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .blob { animation: none; }
-      .fade-in { opacity: 1; transform: none; transition: none; }
-      * { animation-duration: 0.01ms !important; }
+      .blob {
+        animation: none;
+      }
+
+      .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      * {
+        animation-duration: 0.01ms !important;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- ===== LOADER OVERLAY ===== -->
@@ -1559,14 +1972,16 @@
         <li><a href="#help">Help &amp; Contact</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li class="nav-mobile-only" style="display: none; margin-top: 10px;">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform" target="_blank" class="nav-cta" style="display: block; text-align: center;">Register Now</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform"
+            target="_blank" class="nav-cta" style="display: block; text-align: center;">Register Now</a>
         </li>
       </ul>
       <div class="nav-actions">
         <a href="BuildSprint_2026_Brochure_2.pdf" target="_blank" class="nav-pdf-btn">
           <i class="fas fa-download"></i> Brochure
         </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform" target="_blank" class="nav-cta">Register Now</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform"
+          target="_blank" class="nav-cta">Register Now</a>
       </div>
       <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle Menu">
         <i class="fas fa-bars"></i>
@@ -1595,15 +2010,19 @@
         </p>
 
         <p class="hero-desc">
-          BuildSprint 2026 is a two-day inter-college Startup Ideation &amp; Innovation Challenge hosted by the Department of Management Studies &amp; Prabandhanam Society, BIT Mesra, Patna Campus. Turn your raw idea into a working prototype and pitch before expert judges.
+          BuildSprint 2026 is a two-day inter-college Startup Ideation &amp; Innovation Challenge hosted by the
+          Department of Management Studies &amp; Prabandhanam Society, BIT Mesra, Patna Campus. Turn your raw idea into
+          a working prototype and pitch before expert judges.
         </p>
 
         <div class="hero-actions">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform" target="_blank" class="btn btn-primary">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform"
+            target="_blank" class="btn btn-primary">
             <i class="fas fa-rocket"></i>
             Register Now (Free)
           </a>
-          <a href="https://chat.whatsapp.com/BWjvvGqOh7kKigl74itQ58?s=cl&p=i&ilr=2&amv=2" target="_blank" class="btn btn-emerald">
+          <a href="https://chat.whatsapp.com/BWjvvGqOh7kKigl74itQ58?s=cl&p=i&ilr=2&amv=2" target="_blank"
+            class="btn btn-emerald">
             <i class="fab fa-whatsapp"></i>
             Join WhatsApp Group
           </a>
@@ -1653,7 +2072,8 @@
       <div class="section-header fade-in">
         <div class="section-eyebrow">Event Resources</div>
         <h2 class="section-title">Official Brochure &amp; Participant Guide</h2>
-        <p class="section-lede">Download the official event brochure and participant guide for complete rules, timelines, and guidelines.</p>
+        <p class="section-lede">Download the official event brochure and participant guide for complete rules,
+          timelines, and guidelines.</p>
       </div>
 
       <div class="documents-card fade-in">
@@ -1662,7 +2082,9 @@
             <i class="fas fa-file-pdf"></i> PDF Resources
           </div>
           <h3>BuildSprint 2026</h3>
-          <p>Organised by Department of Management Studies &amp; Prabandhanam Society at BIT Mesra, Patna Campus. Bringing together students across BBA, MBA, B.Tech, BCA, and all streams for an intensive 2-day ideation sprint.</p>
+          <p>Organised by Department of Management Studies &amp; Prabandhanam Society at BIT Mesra, Patna Campus.
+            Bringing together students across BBA, MBA, B.Tech, BCA, and all streams for an intensive 2-day ideation
+            sprint.</p>
         </div>
 
         <div class="poster-highlights">
@@ -1757,7 +2179,8 @@
       <div class="section-header fade-in">
         <div class="section-eyebrow">Sprint Journey</div>
         <h2 class="section-title">From Idea to Pitch in 48 Hours</h2>
-        <p class="section-lede">Learn how you'll take your concept through ideation, validation, prototyping, and jury evaluation.</p>
+        <p class="section-lede">Learn how you'll take your concept through ideation, validation, prototyping, and jury
+          evaluation.</p>
       </div>
 
       <div class="about-grid">
@@ -1823,12 +2246,30 @@
             <span class="badge">SATURDAY</span>
           </div>
           <div class="timeline-day-date">5 September 2026 · BIT Mesra Patna Campus</div>
-          <div class="timeline-item"><div class="timeline-time">10:00 - 10:30</div><div class="timeline-text">Reporting &amp; Participant Registration</div></div>
-          <div class="timeline-item"><div class="timeline-time">10:30 - 11:30</div><div class="timeline-text">Inauguration Ceremony &amp; Keynote Address</div></div>
-          <div class="timeline-item"><div class="timeline-time">11:30 - 13:00</div><div class="timeline-text">Ideation Kickoff &amp; Problem Statements Briefing</div></div>
-          <div class="timeline-item"><div class="timeline-time">13:00 - 14:00</div><div class="timeline-text">Networking Lunch Break</div></div>
-          <div class="timeline-item"><div class="timeline-time">14:00 - 16:00</div><div class="timeline-text">Solution Framing &amp; Business Model Canvas Workshop</div></div>
-          <div class="timeline-item"><div class="timeline-time">16:00</div><div class="timeline-text">Day 1 Wrap-up · Carry prototype tasks forward</div></div>
+          <div class="timeline-item">
+            <div class="timeline-time">10:00 - 10:30</div>
+            <div class="timeline-text">Reporting &amp; Participant Registration</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10:30 - 11:30</div>
+            <div class="timeline-text">Inauguration Ceremony &amp; Keynote Address</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">11:30 - 13:00</div>
+            <div class="timeline-text">Ideation Kickoff &amp; Problem Statements Briefing</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">13:00 - 14:00</div>
+            <div class="timeline-text">Networking Lunch Break</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14:00 - 16:00</div>
+            <div class="timeline-text">Solution Framing &amp; Business Model Canvas Workshop</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">16:00</div>
+            <div class="timeline-text">Day 1 Wrap-up · Carry prototype tasks forward</div>
+          </div>
         </div>
 
         <div class="timeline-day fade-in">
@@ -1837,10 +2278,22 @@
             <span class="badge">SUNDAY</span>
           </div>
           <div class="timeline-day-date">6 September 2026 · BIT Mesra Patna Campus</div>
-          <div class="timeline-item"><div class="timeline-time">11:00 - 11:30</div><div class="timeline-text">Check-in &amp; Morning Setup</div></div>
-          <div class="timeline-item"><div class="timeline-time">11:30 - 14:00</div><div class="timeline-text">Prototype Building &amp; Final Pitch Preparation</div></div>
-          <div class="timeline-item"><div class="timeline-time">14:00 - 15:00</div><div class="timeline-text">Lunch Break</div></div>
-          <div class="timeline-item"><div class="timeline-time">15:00 - 18:00</div><div class="timeline-text">Final Jury Pitching · Q&amp;A · Prize Distribution &amp; Closing</div></div>
+          <div class="timeline-item">
+            <div class="timeline-time">11:00 - 11:30</div>
+            <div class="timeline-text">Check-in &amp; Morning Setup</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">11:30 - 14:00</div>
+            <div class="timeline-text">Prototype Building &amp; Final Pitch Preparation</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14:00 - 15:00</div>
+            <div class="timeline-text">Lunch Break</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:00 - 18:00</div>
+            <div class="timeline-text">Final Jury Pitching · Q&amp;A · Prize Distribution &amp; Closing</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1914,12 +2367,12 @@
             <svg width="100" height="100">
               <defs>
                 <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#6366f1"/>
-                  <stop offset="100%" stop-color="#a855f7"/>
+                  <stop offset="0%" stop-color="#6366f1" />
+                  <stop offset="100%" stop-color="#a855f7" />
                 </linearGradient>
               </defs>
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg"/>
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="20"/>
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg" />
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="20" />
             </svg>
             <div class="progress-value">20%</div>
           </div>
@@ -1929,8 +2382,8 @@
         <div class="criteria-card fade-in">
           <div class="progress-ring">
             <svg width="100" height="100">
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg"/>
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="20"/>
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg" />
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="20" />
             </svg>
             <div class="progress-value">20%</div>
           </div>
@@ -1940,8 +2393,8 @@
         <div class="criteria-card fade-in">
           <div class="progress-ring">
             <svg width="100" height="100">
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg"/>
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="20"/>
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg" />
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="20" />
             </svg>
             <div class="progress-value">20%</div>
           </div>
@@ -1951,8 +2404,8 @@
         <div class="criteria-card fade-in">
           <div class="progress-ring">
             <svg width="100" height="100">
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg"/>
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="15"/>
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg" />
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="15" />
             </svg>
             <div class="progress-value">15%</div>
           </div>
@@ -1962,8 +2415,8 @@
         <div class="criteria-card fade-in">
           <div class="progress-ring">
             <svg width="100" height="100">
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg"/>
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="15"/>
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg" />
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="15" />
             </svg>
             <div class="progress-value">15%</div>
           </div>
@@ -1973,8 +2426,8 @@
         <div class="criteria-card fade-in">
           <div class="progress-ring">
             <svg width="100" height="100">
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg"/>
-              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="10"/>
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-bg" />
+              <circle cx="50" cy="50" r="45" fill="none" stroke-width="6" class="progress-ring-fill" data-pct="10" />
             </svg>
             <div class="progress-value">10%</div>
           </div>
@@ -1982,462 +2435,496 @@
         </div>
       </div>
     </div>
-  <!-- ===== PARTNERS & SPONSORS SECTION ===== -->
-  <section id="partners">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-eyebrow">Collaborators &amp; Supporters</div>
-        <h2 class="section-title">Partners &amp; Ecosystem Supporters</h2>
-        <p class="section-lede">BuildSprint 2026 is supported by academic institutions, innovation councils, and student entrepreneurial bodies.</p>
-      </div>
-
-      <div class="partners-grid fade-in">
-        <!-- Host Institute -->
-        <div class="partner-card">
-          <div class="partner-logo-box" style="background: white;">
-            <img src="college logo.jpeg" alt="BIT Mesra Patna Logo" class="partner-logo-img">
-          </div>
-          <div>
-            <div class="partner-category">Host Institute</div>
-            <h4 class="partner-name">BIT Mesra, Patna Campus</h4>
-            <p class="partner-desc">Premier technical institute providing venue, infrastructure, and academic mentorship.</p>
-          </div>
+    <!-- ===== PARTNERS & SPONSORS SECTION ===== -->
+    <section id="partners">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Collaborators &amp; Supporters</div>
+          <h2 class="section-title">Partners &amp; Ecosystem Supporters</h2>
+          <p class="section-lede">BuildSprint 2026 is supported by academic institutions, innovation councils, and
+            student entrepreneurial bodies.</p>
         </div>
 
-        <!-- Organising Department -->
-        <div class="partner-card">
-          <div class="partner-logo-box" style="background: white;">
-            <img src="society .jpg" alt="Prabandhanam Society Logo" class="partner-logo-img">
-          </div>
-          <div>
-            <div class="partner-category">Organising Body</div>
-            <h4 class="partner-name">Prabandhanam Society</h4>
-            <p class="partner-desc">Department of Management Studies student society fostering business &amp; startup skills.</p>
-          </div>
-        </div>
-
-        <!-- Innovation Partner -->
-        <div class="partner-card">
-          <div class="partner-logo-box" style="background: white;">
-            <img src="iic logo.jpeg" alt="Institution's Innovation Council Logo" class="partner-logo-img">
-          </div>
-          <div>
-            <div class="partner-category">Innovation Partner</div>
-            <h4 class="partner-name">Institution's Innovation Council</h4>
-            <p class="partner-desc">MoE initiative supporting innovation, ideation sprints, and IP mentoring on campus.</p>
-          </div>
-        </div>
-
-        <!-- Title Sponsor -->
-        <div class="partner-card">
-          <div class="partner-logo-box" style="background: white;">
-            <img src="title sponsor .jpeg" alt="Title Sponsor Logo" class="partner-logo-img">
-          </div>
-          <div>
-            <div class="partner-category">Sponsor</div>
-            <h4 class="partner-name">Title Sponsor</h4>
-            <p class="partner-desc">Official title sponsor supporting BuildSprint 2026 innovation challenge.</p>
-          </div>
-        </div>
-
-        <!-- Media & Outreach -->
-        <div class="partner-card">
-          <div class="partner-logo-box">
-            <i class="fas fa-bullhorn" style="font-size: 32px; color: var(--cyan);"></i>
-          </div>
-          <div>
-            <div class="partner-category">Media &amp; Outreach</div>
-            <h4 class="partner-name">Student Media &amp; PR Network</h4>
-            <p class="partner-desc">Official student media coverage, live updates, and inter-college promotional partner.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== HELP & CONTACT SECTION ===== -->
-  <section id="help">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-eyebrow">Queries &amp; Support</div>
-        <h2 class="section-title">Help &amp; Contact</h2>
-        <p class="section-lede">You can contact any of us for any queries and questions.</p>
-      </div>
-
-      <div class="help-grid fade-in">
-        <!-- Danish Iqbal -->
-        <div class="contact-card">
-          <div class="contact-avatar">
-            <i class="fas fa-user-tie"></i>
-          </div>
-          <div class="contact-info">
-            <div class="contact-role">Event Coordinator</div>
-            <h4 class="contact-name">DANISH IQBAL</h4>
-            <p class="contact-note">Contact for registration &amp; event queries</p>
-
-            <div class="contact-actions">
-              <a href="tel:+917209554039" class="btn btn-primary btn-sm">
-                <i class="fas fa-phone-alt"></i> +91 72095 54039
-              </a>
-              <a href="https://wa.me/917209554039?text=Hi%20Danish,%20I%20have%20a%20query%20regarding%20BuildSprint%202026" target="_blank" class="btn btn-emerald btn-sm">
-                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-              </a>
+        <div class="partners-grid fade-in">
+          <!-- Host Institute -->
+          <div class="partner-card">
+            <div class="partner-logo-box" style="background: white;">
+              <img src="college logo.jpeg" alt="BIT Mesra Patna Logo" class="partner-logo-img">
+            </div>
+            <div>
+              <div class="partner-category">Host Institute</div>
+              <h4 class="partner-name">BIT Mesra, Patna Campus</h4>
+              <p class="partner-desc">Premier technical institute providing venue, infrastructure, and academic
+                mentorship.</p>
             </div>
           </div>
-        </div>
 
-        <!-- Hemant Raj -->
-        <div class="contact-card">
-          <div class="contact-avatar">
-            <i class="fas fa-user-tie"></i>
+          <!-- Organising Department -->
+          <div class="partner-card">
+            <div class="partner-logo-box" style="background: white;">
+              <img src="society .jpg" alt="Prabandhanam Society Logo" class="partner-logo-img">
+            </div>
+            <div>
+              <div class="partner-category">Organising Body</div>
+              <h4 class="partner-name">Prabandhanam Society</h4>
+              <p class="partner-desc">Department of Management Studies student society fostering business &amp; startup
+                skills.</p>
+            </div>
           </div>
-          <div class="contact-info">
-            <div class="contact-role">Event Coordinator</div>
-            <h4 class="contact-name">HEMANT RAJ</h4>
-            <p class="contact-note">Contact for venue &amp; schedule queries</p>
 
-            <div class="contact-actions">
-              <a href="tel:+917759874009" class="btn btn-primary btn-sm">
-                <i class="fas fa-phone-alt"></i> +91 77598 74009
-              </a>
-              <a href="https://wa.me/917759874009?text=Hi%20Hemant,%20I%20have%20a%20query%20regarding%20BuildSprint%202026" target="_blank" class="btn btn-emerald btn-sm">
-                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-              </a>
+          <!-- Innovation Partner -->
+          <div class="partner-card">
+            <div class="partner-logo-box" style="background: white;">
+              <img src="iic logo.jpeg" alt="Institution's Innovation Council Logo" class="partner-logo-img">
+            </div>
+            <div>
+              <div class="partner-category">Innovation Partner</div>
+              <h4 class="partner-name">Institution's Innovation Council</h4>
+              <p class="partner-desc">MoE initiative supporting innovation, ideation sprints, and IP mentoring on
+                campus.</p>
+            </div>
+          </div>
+
+          <!-- Title Sponsor -->
+          <div class="partner-card">
+            <div class="partner-logo-box" style="background: white;">
+              <img src="title sponsor .jpeg" alt="Title Sponsor Logo" class="partner-logo-img">
+            </div>
+            <div>
+              <div class="partner-category">Sponsor</div>
+              <h4 class="partner-name">Title Sponsor</h4>
+              <p class="partner-desc">Official title sponsor supporting BuildSprint 2026 innovation challenge.</p>
+            </div>
+          </div>
+
+          <!-- Media & Outreach -->
+          <div class="partner-card">
+            <div class="partner-logo-box" style="background: white;">
+              <img src="media partner.png" alt="Media Partner Logo" class="partner-logo-img">
+            </div>
+            <div>
+              <div class="partner-category">Media &amp; Outreach</div>
+              <h4 class="partner-name">Student Media &amp; PR Network</h4>
+              <p class="partner-desc">Official student media coverage, live updates, and inter-college promotional
+                partner.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FAQ SECTION ===== -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-eyebrow">Questions &amp; Answers</div>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item fade-in">
-          <button class="faq-q">Who is eligible to participate?<i class="fas fa-chevron-down"></i></button>
-          <div class="faq-a">Students from any college, university, or stream (BBA, MBA, B.Tech, BCA, B.Sc, B.Com, Design, etc.) are eligible.</div>
+    <!-- ===== HELP & CONTACT SECTION ===== -->
+    <section id="help">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Queries &amp; Support</div>
+          <h2 class="section-title">Help &amp; Contact</h2>
+          <p class="section-lede">You can contact any of us for any queries and questions.</p>
         </div>
 
-        <div class="faq-item fade-in">
-          <button class="faq-q">Is there any registration fee?<i class="fas fa-chevron-down"></i></button>
-          <div class="faq-a">No! Registration is completely free for all participants.</div>
-        </div>
-
-        <div class="faq-item fade-in">
-          <button class="faq-q">Can I register individually without a team?<i class="fas fa-chevron-down"></i></button>
-          <div class="faq-a">Yes! Solo participants are welcome. You can compete solo or form a team of up to 4 members.</div>
-        </div>
-
-        <div class="faq-item fade-in">
-          <button class="faq-q">Is coding or technical knowledge required?<i class="fas fa-chevron-down"></i></button>
-          <div class="faq-a">No coding knowledge is required. Your prototype can be a business model canvas, wireframe mockup, video demo, or no-code product.</div>
-        </div>
-
-        <div class="faq-item fade-in">
-          <button class="faq-q">What should participants bring to the venue?<i class="fas fa-chevron-down"></i></button>
-          <div class="faq-a">Bring a laptop, charger, college ID card, and notepad. Wi-Fi and seating arrangements are provided at BIT Mesra Patna Campus.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== REGISTRATION & WHATSAPP SECTION WITH QR CODES ===== -->
-  <section id="register">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-eyebrow">Get Started</div>
-        <h2 class="section-title">Register &amp; Join Community</h2>
-        <p class="section-lede">Scan the QR codes below or click the buttons to complete your registration and join the official WhatsApp group.</p>
-      </div>
-
-      <div class="register-wrap">
-        <!-- Google Form Card -->
-        <div class="register-card fade-in">
-          <div>
-            <div class="section-eyebrow" style="color: var(--cyan);">Online Registration</div>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 12px;">Google Form Registration</h3>
-            <p style="color: var(--text-dim); font-size: 15px; margin-bottom: 16px;">
-              Fill out the official Google Form to confirm your entry. Free registration for individuals &amp; team leads.
-            </p>
-            <div style="font-size: 24px; font-weight: 700; color: var(--emerald); margin-bottom: 16px;">FREE ENTRY</div>
-          </div>
-
-          <div>
-            <div class="qr-preview-box" onclick="openLightbox('Google form.jpg', 'Scan with Phone Camera to Register via Google Form')">
-              <img src="Google form.jpg" alt="Google Form QR Code">
+        <div class="help-grid fade-in">
+          <!-- Danish Iqbal -->
+          <div class="contact-card">
+            <div class="contact-avatar">
+              <i class="fas fa-user-tie"></i>
             </div>
-            <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">Click QR code to enlarge</p>
+            <div class="contact-info">
+              <div class="contact-role"></div>
+              <h4 class="contact-name">DANISH IQBAL</h4>
+              <p class="contact-note">Contact for registration &amp; event queries</p>
 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform" target="_blank" class="btn btn-primary" style="margin-top: 16px; width: 100%; justify-content: center;">
-              <i class="fas fa-external-link-alt"></i> Open Google Form
-            </a>
-          </div>
-        </div>
-
-        <!-- WhatsApp Group Card -->
-        <div class="whatsapp-card fade-in" id="whatsapp">
-          <div>
-            <div class="section-eyebrow" style="color: #25d366;">Community Updates</div>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 12px;">WhatsApp Community</h3>
-            <p style="color: var(--text-dim); font-size: 15px; margin-bottom: 16px;">
-              Join the official participant group for live announcements, mentor Q&amp;A, team matchmaking, and schedule updates.
-            </p>
-          </div>
-
-          <div>
-            <div class="qr-preview-box" onclick="openLightbox('whatsapp QR .jpg', 'Scan with WhatsApp / Camera to Join Group')">
-              <img src="whatsapp QR .jpg" alt="WhatsApp Group QR Code">
+              <div class="contact-actions">
+                <a href="tel:+917209554039" class="btn btn-primary btn-sm">
+                  <i class="fas fa-phone-alt"></i> +91 72095 54039
+                </a>
+                <a href="https://wa.me/917209554039?text=Hi%20Danish,%20I%20have%20a%20query%20regarding%20BuildSprint%202026"
+                  target="_blank" class="btn btn-emerald btn-sm">
+                  <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+              </div>
             </div>
-            <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">Click QR code to enlarge</p>
+          </div>
 
-            <a href="https://chat.whatsapp.com/BWjvvGqOh7kKigl74itQ58?s=cl&p=i&ilr=2&amv=2" target="_blank" class="btn btn-emerald" style="margin-top: 16px; width: 100%; justify-content: center;">
-              <i class="fab fa-whatsapp"></i> Join WhatsApp Group
-            </a>
+          <!-- Hemant Raj -->
+          <div class="contact-card">
+            <div class="contact-avatar">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="contact-info">
+              <div class="contact-role"></div>
+              <h4 class="contact-name">HEMANT RAJ</h4>
+              <p class="contact-note">Contact for venue &amp; schedule queries</p>
+
+              <div class="contact-actions">
+                <a href="tel:+917759874009" class="btn btn-primary btn-sm">
+                  <i class="fas fa-phone-alt"></i> +91 77598 74009
+                </a>
+                <a href="https://wa.me/917759874009?text=Hi%20Hemant,%20I%20have%20a%20query%20regarding%20BuildSprint%202026"
+                  target="_blank" class="btn btn-emerald btn-sm">
+                  <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== ORGANISED BY ===== -->
-  <section id="organiser">
-    <div class="container">
-      <div class="organised-card fade-in">
-        <img src="society .jpg" alt="Prabandhanam Society Logo" class="organised-logo">
-        <div class="section-eyebrow">Organising Body</div>
-        <h3>Department of Management Studies</h3>
-        <p class="line">Prabandhanam Society · BIT Mesra, Patna Campus</p>
-        <p style="color: var(--text-dim); font-size: 14px; margin-top: 12px; max-width: 500px; margin-left: auto; margin-right: auto;">
-          Fostering innovation, managerial excellence, and student entrepreneurship through hands-on challenges and workshops.
-        </p>
+    <!-- ===== FAQ SECTION ===== -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Questions &amp; Answers</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item fade-in">
+            <button class="faq-q">Who is eligible to participate?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">Students from any college, university, or stream (BBA, MBA, B.Tech, BCA, B.Sc, B.Com,
+              Design, etc.) are eligible.</div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-q">Is there any registration fee?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">No! Registration is completely free for all participants.</div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-q">Can I register individually without a team?<i
+                class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">Yes! Solo participants are welcome. You can compete solo or form a team of up to 4
+              members.</div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-q">Is coding or technical knowledge required?<i class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">No coding knowledge is required. Your prototype can be a business model canvas, wireframe
+              mockup, video demo, or no-code product.</div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-q">What should participants bring to the venue?<i
+                class="fas fa-chevron-down"></i></button>
+            <div class="faq-a">Bring a laptop, charger, college ID card, and notepad. Wi-Fi and seating arrangements are
+              provided at BIT Mesra Patna Campus.</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="footer-container">
-      <div>
-        <div class="footer-brand-title">BuildSprint 2026</div>
-        <p class="footer-desc">
-          Two-day inter-college Startup Ideation &amp; Innovation Challenge hosted by Department of Management Studies &amp; Prabandhanam Society, BIT Mesra, Patna Campus.
-        </p>
-        <div class="footer-logos">
-          <img src="college logo.jpeg" alt="BIT Mesra Logo" class="footer-logo-img">
-          <img src="event logo.jpg" alt="BuildSprint Logo" class="footer-logo-img" style="background: none;">
-          <img src="society .jpg" alt="Society Logo" class="footer-logo-img">
+    <!-- ===== REGISTRATION & WHATSAPP SECTION WITH QR CODES ===== -->
+    <section id="register">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Get Started</div>
+          <h2 class="section-title">Register &amp; Join Community</h2>
+          <p class="section-lede">Scan the QR codes below or click the buttons to complete your registration and join
+            the official WhatsApp group.</p>
+        </div>
+
+        <div class="register-wrap">
+          <!-- Google Form Card -->
+          <div class="register-card fade-in">
+            <div>
+              <div class="section-eyebrow" style="color: var(--cyan);">Online Registration</div>
+              <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 12px;">Google Form
+                Registration</h3>
+              <p style="color: var(--text-dim); font-size: 15px; margin-bottom: 16px;">
+                Fill out the official Google Form to confirm your entry. Free registration for individuals &amp; team
+                leads.
+              </p>
+              <div style="font-size: 24px; font-weight: 700; color: var(--emerald); margin-bottom: 16px;">FREE ENTRY
+              </div>
+            </div>
+
+            <div>
+              <div class="qr-preview-box"
+                onclick="openLightbox('Google form.jpg', 'Scan with Phone Camera to Register via Google Form')">
+                <img src="Google form.jpg" alt="Google Form QR Code">
+              </div>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">Click QR code to enlarge</p>
+
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform"
+                target="_blank" class="btn btn-primary" style="margin-top: 16px; width: 100%; justify-content: center;">
+                <i class="fas fa-external-link-alt"></i> Open Google Form
+              </a>
+            </div>
+          </div>
+
+          <!-- WhatsApp Group Card -->
+          <div class="whatsapp-card fade-in" id="whatsapp">
+            <div>
+              <div class="section-eyebrow" style="color: #25d366;">Community Updates</div>
+              <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 12px;">WhatsApp
+                Community</h3>
+              <p style="color: var(--text-dim); font-size: 15px; margin-bottom: 16px;">
+                Join the official participant group for live announcements, mentor Q&amp;A, team matchmaking, and
+                schedule updates.
+              </p>
+            </div>
+
+            <div>
+              <div class="qr-preview-box"
+                onclick="openLightbox('whatsapp QR .jpg', 'Scan with WhatsApp / Camera to Join Group')">
+                <img src="whatsapp QR .jpg" alt="WhatsApp Group QR Code">
+              </div>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">Click QR code to enlarge</p>
+
+              <a href="https://chat.whatsapp.com/BWjvvGqOh7kKigl74itQ58?s=cl&p=i&ilr=2&amv=2" target="_blank"
+                class="btn btn-emerald" style="margin-top: 16px; width: 100%; justify-content: center;">
+                <i class="fab fa-whatsapp"></i> Join WhatsApp Group
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ORGANISED BY ===== -->
+    <section id="organiser">
+      <div class="container">
+        <div class="organised-card fade-in">
+          <img src="society .jpg" alt="Prabandhanam Society Logo" class="organised-logo">
+          <div class="section-eyebrow">Organising Body</div>
+          <h3>Department of Management Studies</h3>
+          <p class="line">Prabandhanam Society · BIT Mesra, Patna Campus</p>
+          <p
+            style="color: var(--text-dim); font-size: 14px; margin-top: 12px; max-width: 500px; margin-left: auto; margin-right: auto;">
+            Fostering innovation, managerial excellence, and student entrepreneurship through hands-on challenges and
+            workshops.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer-container">
+        <div>
+          <div class="footer-brand-title">BuildSprint 2026</div>
+          <p class="footer-desc">
+            Two-day inter-college Startup Ideation &amp; Innovation Challenge hosted by Department of Management Studies
+            &amp; Prabandhanam Society, BIT Mesra, Patna Campus.
+          </p>
+          <div class="footer-logos">
+            <img src="college logo.jpeg" alt="BIT Mesra Logo" class="footer-logo-img">
+            <img src="event logo.jpg" alt="BuildSprint Logo" class="footer-logo-img" style="background: none;">
+            <img src="society .jpg" alt="Society Logo" class="footer-logo-img">
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#documents">Brochure &amp; Guide</a></li>
+            <li><a href="#about">Sprint Journey</a></li>
+            <li><a href="#timeline">Schedule</a></li>
+            <li><a href="#criteria">Judging Criteria</a></li>
+            <li><a href="#partners">Partners &amp; Supporters</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Resources</div>
+          <ul class="footer-links">
+            <li><a href="BuildSprint_2026_Brochure_2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Brochure
+                (PDF)</a></li>
+            <li><a href="BuildSprint_2026_Participant_Guide_2.pdf" target="_blank"><i class="fas fa-book-open"></i>
+                Participant Guide</a></li>
+            <li><a href="#help">Help &amp; Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform"
+                target="_blank">Register Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Help &amp; Student Coordinators</div>
+          <p style="color: var(--text-dim); font-size: 13px; margin-bottom: 12px;">You can contact any of us for any
+            queries and questions.</p>
+          <ul class="footer-links" style="font-size: 13px;">
+            <li style="margin-bottom: 6px;">
+              <strong style="color: var(--text);">DANISH IQBAL</strong><br>
+              <a href="tel:+917209554039" style="color: var(--cyan);"><i class="fas fa-phone-alt"></i> +91 72095
+                54039</a>
+            </li>
+            <li style="margin-bottom: 6px;">
+              <strong style="color: var(--text);">HEMANT RAJ</strong><br>
+              <a href="tel:+917759874009" style="color: var(--cyan);"><i class="fas fa-phone-alt"></i> +91 77598
+                74009</a>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i> BIT Mesra, Patna Campus</li>
+          </ul>
         </div>
       </div>
 
-      <div>
-        <div class="footer-heading">Quick Links</div>
-        <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#documents">Brochure &amp; Guide</a></li>
-          <li><a href="#about">Sprint Journey</a></li>
-          <li><a href="#timeline">Schedule</a></li>
-          <li><a href="#criteria">Judging Criteria</a></li>
-          <li><a href="#partners">Partners &amp; Supporters</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <div>&copy; 2026 BuildSprint · Prabandhanam Society, BIT Mesra Patna Campus. All rights reserved.</div>
+        <div>Designed &amp; Developed for BuildSprint 2026</div>
       </div>
+    </footer>
 
-      <div>
-        <div class="footer-heading">Resources</div>
-        <ul class="footer-links">
-          <li><a href="BuildSprint_2026_Brochure_2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Brochure (PDF)</a></li>
-          <li><a href="BuildSprint_2026_Participant_Guide_2.pdf" target="_blank"><i class="fas fa-book-open"></i> Participant Guide</a></li>
-          <li><a href="#help">Help &amp; Contact</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfIyJXH57HEOsrEzG6mXTDpHLz32D5ju0PTbYNXOB7SLlQ4TQ/viewform" target="_blank">Register Form</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="footer-heading">Help &amp; Student Coordinators</div>
-        <p style="color: var(--text-dim); font-size: 13px; margin-bottom: 12px;">You can contact any of us for any queries and questions.</p>
-        <ul class="footer-links" style="font-size: 13px;">
-          <li style="margin-bottom: 6px;">
-            <strong style="color: var(--text);">DANISH IQBAL</strong><br>
-            <a href="tel:+917209554039" style="color: var(--cyan);"><i class="fas fa-phone-alt"></i> +91 72095 54039</a>
-          </li>
-          <li style="margin-bottom: 6px;">
-            <strong style="color: var(--text);">HEMANT RAJ</strong><br>
-            <a href="tel:+917759874009" style="color: var(--cyan);"><i class="fas fa-phone-alt"></i> +91 77598 74009</a>
-          </li>
-          <li><i class="fas fa-map-marker-alt"></i> BIT Mesra, Patna Campus</li>
-        </ul>
+    <!-- ===== LIGHTBOX MODAL CONTAINER ===== -->
+    <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+      <div class="lightbox-content">
+        <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+        <img src="" alt="Enlarged Preview" id="lightboxImg" class="lightbox-img">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div>&copy; 2026 BuildSprint · Prabandhanam Society, BIT Mesra Patna Campus. All rights reserved.</div>
-      <div>Designed &amp; Developed for BuildSprint 2026</div>
-    </div>
-  </footer>
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-  <!-- ===== LIGHTBOX MODAL CONTAINER ===== -->
-  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
-    <div class="lightbox-content">
-      <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
-      <img src="" alt="Enlarged Preview" id="lightboxImg" class="lightbox-img">
-      <div id="lightboxCaption" class="lightbox-caption"></div>
-    </div>
-  </div>
-
-  <!-- ===== BACK TO TOP ===== -->
-  <button class="back-top" id="backTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- ===== JAVASCRIPT LOGIC ===== -->
-  <script>
-    (function () {
-      // Loader handling
-      function hideLoader() {
-        var loader = document.getElementById("loader");
-        if (loader) {
-          loader.classList.add("hidden");
-          setTimeout(function() { loader.style.display = "none"; }, 500);
+    <!-- ===== JAVASCRIPT LOGIC ===== -->
+    <script>
+      (function () {
+        // Loader handling
+        function hideLoader() {
+          var loader = document.getElementById("loader");
+          if (loader) {
+            loader.classList.add("hidden");
+            setTimeout(function () { loader.style.display = "none"; }, 500);
+          }
         }
-      }
-      window.addEventListener("load", function () { setTimeout(hideLoader, 300); });
-      setTimeout(hideLoader, 2500);
+        window.addEventListener("load", function () { setTimeout(hideLoader, 300); });
+        setTimeout(hideLoader, 2500);
 
-      // Mobile Nav Toggle
-      var toggle = document.getElementById("navToggle");
-      var links = document.getElementById("navLinks");
-      if (toggle && links) {
-        toggle.addEventListener("click", function () {
-          links.classList.toggle("open");
-        });
-        var navItems = links.querySelectorAll("a");
-        for (var i = 0; i < navItems.length; i++) {
-          navItems[i].addEventListener("click", function () { links.classList.remove("open"); });
-        }
-      }
-
-      // Sticky Nav & Back to Top
-      var nav = document.getElementById("nav");
-      var backTop = document.getElementById("backTop");
-      window.addEventListener("scroll", function () {
-        var y = window.scrollY || window.pageYOffset || 0;
-        if (nav) nav.classList.toggle("scrolled", y > 30);
-        if (backTop) backTop.classList.toggle("visible", y > 400);
-      });
-      if (backTop) {
-        backTop.addEventListener("click", function () {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-      }
-
-      // Countdown Timer (Target: Sept 5, 2026 10:00 AM IST = 04:30 UTC)
-      var targetDate = Date.UTC(2026, 8, 5, 4, 30, 0);
-      var daysEl = document.getElementById("days");
-      var hoursEl = document.getElementById("hours");
-      var minsEl = document.getElementById("minutes");
-      var secsEl = document.getElementById("seconds");
-
-      function pad(n) { return String(n).padStart(2, "0"); }
-      function tick() {
-        var diff = targetDate - Date.now();
-        if (diff <= 0) {
-          if (daysEl) daysEl.textContent = hoursEl.textContent = minsEl.textContent = secsEl.textContent = "00";
-          return;
-        }
-        var d = Math.floor(diff / 86400000);
-        var h = Math.floor((diff % 86400000) / 3600000);
-        var m = Math.floor((diff % 3600000) / 60000);
-        var s = Math.floor((diff % 60000) / 1000);
-        if (daysEl) daysEl.textContent = pad(d);
-        if (hoursEl) hoursEl.textContent = pad(h);
-        if (minsEl) minsEl.textContent = pad(m);
-        if (secsEl) secsEl.textContent = pad(s);
-      }
-      tick();
-      setInterval(tick, 1000);
-
-      // FAQ Accordion
-      var faqItems = document.querySelectorAll(".faq-item");
-      for (var k = 0; k < faqItems.length; k++) {
-        (function (item) {
-          var btn = item.querySelector(".faq-q");
-          if (!btn) return;
-          btn.addEventListener("click", function () {
-            var isOpen = item.classList.contains("open");
-            for (var m = 0; m < faqItems.length; m++) faqItems[m].classList.remove("open");
-            if (!isOpen) item.classList.add("open");
+        // Mobile Nav Toggle
+        var toggle = document.getElementById("navToggle");
+        var links = document.getElementById("navLinks");
+        if (toggle && links) {
+          toggle.addEventListener("click", function () {
+            links.classList.toggle("open");
           });
-        })(faqItems[k]);
-      }
-
-      // Fade in on scroll
-      var fadeEls = document.querySelectorAll(".fade-in");
-      if ("IntersectionObserver" in window) {
-        var observer = new IntersectionObserver(function (entries) {
-          for (var i = 0; i < entries.length; i++) {
-            if (entries[i].isIntersecting) {
-              entries[i].target.classList.add("visible");
-              observer.unobserve(entries[i].target);
-            }
+          var navItems = links.querySelectorAll("a");
+          for (var i = 0; i < navItems.length; i++) {
+            navItems[i].addEventListener("click", function () { links.classList.remove("open"); });
           }
-        }, { threshold: 0.1 });
-        for (var j = 0; j < fadeEls.length; j++) observer.observe(fadeEls[j]);
-      } else {
-        for (var f = 0; f < fadeEls.length; f++) fadeEls[f].classList.add("visible");
-      }
+        }
 
-      // Progress Rings
-      var criteriaCards = document.querySelectorAll(".criteria-card");
-      function revealRings(card) {
-        var fill = card.querySelector(".progress-ring-fill");
-        if (!fill) return;
-        var pct = parseInt(fill.getAttribute("data-pct"), 10);
-        if (!isNaN(pct)) {
-          var offset = 283 - (283 * pct / 100);
-          fill.style.strokeDashoffset = offset;
+        // Sticky Nav & Back to Top
+        var nav = document.getElementById("nav");
+        var backTop = document.getElementById("backTop");
+        window.addEventListener("scroll", function () {
+          var y = window.scrollY || window.pageYOffset || 0;
+          if (nav) nav.classList.toggle("scrolled", y > 30);
+          if (backTop) backTop.classList.toggle("visible", y > 400);
+        });
+        if (backTop) {
+          backTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        }
+
+        // Countdown Timer (Target: Sept 5, 2026 10:00 AM IST = 04:30 UTC)
+        var targetDate = Date.UTC(2026, 8, 5, 4, 30, 0);
+        var daysEl = document.getElementById("days");
+        var hoursEl = document.getElementById("hours");
+        var minsEl = document.getElementById("minutes");
+        var secsEl = document.getElementById("seconds");
+
+        function pad(n) { return String(n).padStart(2, "0"); }
+        function tick() {
+          var diff = targetDate - Date.now();
+          if (diff <= 0) {
+            if (daysEl) daysEl.textContent = hoursEl.textContent = minsEl.textContent = secsEl.textContent = "00";
+            return;
+          }
+          var d = Math.floor(diff / 86400000);
+          var h = Math.floor((diff % 86400000) / 3600000);
+          var m = Math.floor((diff % 3600000) / 60000);
+          var s = Math.floor((diff % 60000) / 1000);
+          if (daysEl) daysEl.textContent = pad(d);
+          if (hoursEl) hoursEl.textContent = pad(h);
+          if (minsEl) minsEl.textContent = pad(m);
+          if (secsEl) secsEl.textContent = pad(s);
+        }
+        tick();
+        setInterval(tick, 1000);
+
+        // FAQ Accordion
+        var faqItems = document.querySelectorAll(".faq-item");
+        for (var k = 0; k < faqItems.length; k++) {
+          (function (item) {
+            var btn = item.querySelector(".faq-q");
+            if (!btn) return;
+            btn.addEventListener("click", function () {
+              var isOpen = item.classList.contains("open");
+              for (var m = 0; m < faqItems.length; m++) faqItems[m].classList.remove("open");
+              if (!isOpen) item.classList.add("open");
+            });
+          })(faqItems[k]);
+        }
+
+        // Fade in on scroll
+        var fadeEls = document.querySelectorAll(".fade-in");
+        if ("IntersectionObserver" in window) {
+          var observer = new IntersectionObserver(function (entries) {
+            for (var i = 0; i < entries.length; i++) {
+              if (entries[i].isIntersecting) {
+                entries[i].target.classList.add("visible");
+                observer.unobserve(entries[i].target);
+              }
+            }
+          }, { threshold: 0.1 });
+          for (var j = 0; j < fadeEls.length; j++) observer.observe(fadeEls[j]);
+        } else {
+          for (var f = 0; f < fadeEls.length; f++) fadeEls[f].classList.add("visible");
+        }
+
+        // Progress Rings
+        var criteriaCards = document.querySelectorAll(".criteria-card");
+        function revealRings(card) {
+          var fill = card.querySelector(".progress-ring-fill");
+          if (!fill) return;
+          var pct = parseInt(fill.getAttribute("data-pct"), 10);
+          if (!isNaN(pct)) {
+            var offset = 283 - (283 * pct / 100);
+            fill.style.strokeDashoffset = offset;
+          }
+        }
+        if ("IntersectionObserver" in window) {
+          var ringObs = new IntersectionObserver(function (entries) {
+            for (var i = 0; i < entries.length; i++) {
+              if (entries[i].isIntersecting) {
+                revealRings(entries[i].target);
+                ringObs.unobserve(entries[i].target);
+              }
+            }
+          }, { threshold: 0.2 });
+          for (var c = 0; c < criteriaCards.length; c++) ringObs.observe(criteriaCards[c]);
+        } else {
+          for (var r = 0; r < criteriaCards.length; r++) revealRings(criteriaCards[r]);
+        }
+      })();
+
+      // Lightbox Global Functions
+      function openLightbox(imgSrc, captionText) {
+        var modal = document.getElementById("lightboxModal");
+        var img = document.getElementById("lightboxImg");
+        var cap = document.getElementById("lightboxCaption");
+        if (modal && img) {
+          img.src = imgSrc;
+          if (cap) cap.textContent = captionText || "";
+          modal.classList.add("active");
         }
       }
-      if ("IntersectionObserver" in window) {
-        var ringObs = new IntersectionObserver(function (entries) {
-          for (var i = 0; i < entries.length; i++) {
-            if (entries[i].isIntersecting) {
-              revealRings(entries[i].target);
-              ringObs.unobserve(entries[i].target);
-            }
-          }
-        }, { threshold: 0.2 });
-        for (var c = 0; c < criteriaCards.length; c++) ringObs.observe(criteriaCards[c]);
-      } else {
-        for (var r = 0; r < criteriaCards.length; r++) revealRings(criteriaCards[r]);
+      function closeLightbox(e) {
+        if (!e || e.target.id === "lightboxModal" || e.target.classList.contains("lightbox-close")) {
+          var modal = document.getElementById("lightboxModal");
+          if (modal) modal.classList.remove("active");
+        }
       }
-    })();
-
-    // Lightbox Global Functions
-    function openLightbox(imgSrc, captionText) {
-      var modal = document.getElementById("lightboxModal");
-      var img = document.getElementById("lightboxImg");
-      var cap = document.getElementById("lightboxCaption");
-      if (modal && img) {
-        img.src = imgSrc;
-        if (cap) cap.textContent = captionText || "";
-        modal.classList.add("active");
-      }
-    }
-    function closeLightbox(e) {
-      if (!e || e.target.id === "lightboxModal" || e.target.classList.contains("lightbox-close")) {
-        var modal = document.getElementById("lightboxModal");
-        if (modal) modal.classList.remove("active");
-      }
-    }
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeLightbox();
-    });
-  </script>
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
 </body>
+
 </html>
