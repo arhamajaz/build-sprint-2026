@@ -28,14 +28,14 @@ This repository contains the full production website codebase, featuring a moder
 ```
 build-sprint-2026/
 ├── index.html                                 # Main production landing page
-├── BuildSprint_2026_Brochure_2.pdf            # Official Event Brochure
-├── BuildSprint_2026_Participant_Guide_2.pdf   # Participant Guidelines
+├── FINAL BROCHURE 14.pdf                        # Official Event Brochure
+├── FINAL 2 BuildSprint_2026_Participant_Guide.pdf # Participant Guidelines
 ├── Rocket_flying_upwards_in_space_202608081159.mp4 # Hero background video
 ├── college logo.jpeg                          # BIT Mesra Patna Campus Logo
 ├── event logo.jpg                             # BuildSprint 2026 Official Logo
 ├── society .jpg                               # Prabandhanam Society Logo
 ├── poster .jpeg                               # Official Event Flyer Poster
-├── Google form.jpg                            # Registration QR Code
+├── resgistration qr.jpeg                       # Registration QR Code
 ├── whatsapp QR .jpg                           # WhatsApp Community QR Code
 └── README.md                                  # Documentation
 ```
