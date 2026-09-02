@@ -13,7 +13,7 @@
   <meta name="description"
     content="BuildSprint 2026 is a two-day inter-college startup ideation and innovation challenge hosted by the Department of Management Studies & Prabandhanam Society, BIT Mesra, Patna Campus. 5-6 September 2026.">
   <meta name="keywords"
-    content="BuildSprint, startup challenge, BIT Mesra, Patna, innovation, ideation, hackathon, prototype, 2026, Prabandhanam, Department of Management Studies, Danish Iqbal, Hemant Raj">
+    content="BuildSprint, startup challenge, BIT Mesra, Patna, innovation, ideation, hackathon, prototype, 2026, Prabandhanam, Department of Management Studies, Shahbaz Ansari, Danish Iqbal, Hemant Raj">
   <meta name="author" content="Prabandhanam Society, Department of Management Studies, BIT Mesra Patna Campus">
 
   <!-- Open Graph -->
@@ -1498,6 +1498,193 @@
       margin-bottom: 4px;
     }
 
+    /* ===== FOOTER EVENT TEAM STYLES ===== */
+    .footer-team-box {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .footer-event-head {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(99, 102, 241, 0.15));
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      box-shadow: 0 4px 15px rgba(168, 85, 247, 0.12);
+    }
+
+    .footer-event-head .head-role {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--purple);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+
+    .footer-event-head .head-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.01em;
+    }
+
+    .footer-coordinators-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-coordinators-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-coordinators-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-coordinator-item {
+      font-size: 13px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.4;
+      white-space: nowrap;
+      transition: color 0.2s ease;
+    }
+
+    .footer-coordinator-item:hover {
+      color: #ffffff;
+    }
+
+    .footer-coordinator-item i {
+      font-size: 6px;
+      color: var(--cyan);
+      flex-shrink: 0;
+    }
+
+    /* ===== HELP SECTION EVENT HEAD & COORDINATORS ===== */
+    .event-head-card {
+      max-width: 840px;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(99, 102, 241, 0.12), rgba(10, 10, 26, 0.8));
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .event-head-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--purple);
+    }
+
+    .head-card-inner {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .head-avatar {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(236, 72, 153, 0.3));
+      border: 2px solid var(--purple);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 22px;
+      flex-shrink: 0;
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    }
+
+    .head-card-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 2px;
+    }
+
+    .coordinators-showcase {
+      max-width: 840px;
+      margin: 28px auto 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      backdrop-filter: blur(20px);
+    }
+
+    .coordinators-showcase-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .coordinators-showcase-title i {
+      color: var(--cyan);
+    }
+
+    .coordinators-chips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    .coordinator-chip {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+
+    .coordinator-chip:hover {
+      background: rgba(139, 92, 246, 0.12);
+      border-color: rgba(139, 92, 246, 0.4);
+      transform: translateY(-2px);
+      color: #ffffff;
+    }
+
+    .coordinator-chip i {
+      color: var(--violet);
+      font-size: 12px;
+    }
+
     /* ===== FOOTER ===== */
     footer {
       border-top: 1px solid var(--border);
@@ -1511,7 +1698,7 @@
       max-width: var(--max-w);
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      grid-template-columns: 1.8fr 1fr 1fr 2fr;
       gap: 40px;
       margin-bottom: 40px;
     }
@@ -1587,6 +1774,77 @@
       font-size: 13px;
       flex-wrap: wrap;
       gap: 12px;
+    }
+
+    /* ===== DEVELOPER CREDITS STRIP ===== */
+    .developer-strip {
+      max-width: var(--max-w);
+      margin: 20px auto 0;
+      padding-top: 20px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 13.5px;
+      color: var(--text-dim);
+    }
+
+    .developer-credit-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .developer-credit-text strong {
+      color: #ffffff;
+      font-weight: 700;
+      background: linear-gradient(135deg, #a855f7 0%, #22d3ee 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .developer-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .dev-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 16px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-strong);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+
+    .dev-link.linkedin-link:hover {
+      background: rgba(10, 102, 194, 0.2);
+      border-color: #0a66c2;
+      color: #38bdf8;
+      box-shadow: 0 0 16px rgba(10, 102, 194, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .dev-link.mail-link:hover {
+      background: rgba(234, 67, 53, 0.18);
+      border-color: #ea4335;
+      color: #f87171;
+      box-shadow: 0 0 16px rgba(234, 67, 53, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .dev-link i {
+      font-size: 14px;
     }
 
     /* ===== LIGHTBOX MODAL ===== */
@@ -2523,9 +2781,24 @@
         <div class="section-header fade-in">
           <div class="section-eyebrow">Queries &amp; Support</div>
           <h2 class="section-title">Help &amp; Contact</h2>
-          <p class="section-lede">You can contact any of us for any queries and questions.</p>
+          <p class="section-lede">Reach out to our event head and coordinators for any queries and questions.</p>
         </div>
 
+        <!-- Event Head Highlight Card -->
+        <div class="event-head-card fade-in">
+          <div class="head-card-inner">
+            <div class="head-avatar">
+              <i class="fas fa-crown"></i>
+            </div>
+            <div>
+              <div class="contact-role" style="color: var(--purple);"><i class="fas fa-crown"></i> Event Head</div>
+              <h3 class="head-card-name">SHAHBAZ ANSARI</h3>
+              <p class="contact-note" style="margin-bottom: 0;">Lead Coordinator &amp; Event Head · BuildSprint 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Contact Cards -->
         <div class="help-grid fade-in">
           <!-- Danish Iqbal -->
           <div class="contact-card">
@@ -2533,7 +2806,7 @@
               <i class="fas fa-user-tie"></i>
             </div>
             <div class="contact-info">
-              <div class="contact-role"></div>
+              <div class="contact-role">Event Coordinator</div>
               <h4 class="contact-name">DANISH IQBAL</h4>
               <p class="contact-note">Contact for registration &amp; event queries</p>
 
@@ -2555,7 +2828,7 @@
               <i class="fas fa-user-tie"></i>
             </div>
             <div class="contact-info">
-              <div class="contact-role"></div>
+              <div class="contact-role">Event Coordinator</div>
               <h4 class="contact-name">HEMANT RAJ</h4>
               <p class="contact-note">Contact for venue &amp; schedule queries</p>
 
@@ -2569,6 +2842,24 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- All Event Coordinators Showcase -->
+        <div class="coordinators-showcase fade-in">
+          <h3 class="coordinators-showcase-title"><i class="fas fa-users"></i> Event Coordinators</h3>
+          <div class="coordinators-chips-grid">
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Hemant Raj</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Sristi Kumari</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Danish Iqbal</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Aditya Raj</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Rishita Raj</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Tarushi Nandini</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Suyash</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Pratyush Kamal</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Shubhankar Kumar Jha</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Aditya Rai Aryan</div>
+            <div class="coordinator-chip"><i class="fas fa-user-circle"></i> Aryan Kumar</div>
           </div>
         </div>
       </div>
@@ -2746,28 +3037,53 @@
         </div>
 
         <div>
-          <div class="footer-heading">Help &amp; Student Coordinators</div>
-          <p style="color: var(--text-dim); font-size: 13px; margin-bottom: 12px;">You can contact any of us for any
-            queries and questions.</p>
-          <ul class="footer-links" style="font-size: 13px;">
-            <li style="margin-bottom: 6px;">
-              <strong style="color: var(--text);">DANISH IQBAL</strong><br>
-              <a href="tel:+917209554039" style="color: var(--cyan);"><i class="fas fa-phone-alt"></i> +91 72095
-                54039</a>
-            </li>
-            <li style="margin-bottom: 6px;">
-              <strong style="color: var(--text);">HEMANT RAJ</strong><br>
-              <a href="tel:+917759874009" style="color: var(--cyan);"><i class="fas fa-phone-alt"></i> +91 77598
-                74009</a>
-            </li>
-            <li><i class="fas fa-map-marker-alt"></i> BIT Mesra, Patna Campus</li>
-          </ul>
+          <div class="footer-heading">Event Team</div>
+          <div class="footer-team-box">
+            <!-- Event Head -->
+            <div class="footer-event-head">
+              <div class="head-role"><i class="fas fa-crown"></i> Event Head</div>
+              <div class="head-name">Shahbaz Ansari</div>
+            </div>
+
+            <!-- Event Coordinators -->
+            <div class="footer-coordinators-container">
+              <div class="footer-coordinators-title"><i class="fas fa-users"></i> Event Coordinators</div>
+              <ul class="footer-coordinators-list">
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Hemant Raj</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Sristi Kumari</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Danish Iqbal</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Aditya Raj</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Rishita Raj</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Tarushi Nandini</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Suyash</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Pratyush Kamal</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Shubhankar Kumar Jha</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Aditya Rai Aryan</li>
+                <li class="footer-coordinator-item"><i class="fas fa-circle"></i> Aryan Kumar</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>&copy; 2026 BuildSprint · Prabandhanam Society, BIT Mesra Patna Campus. All rights reserved.</div>
-        <div>Designed &amp; Developed for BuildSprint 2026</div>
+        <div>Department of Management Studies</div>
+      </div>
+
+      <!-- ===== DEVELOPER CREDIT STRIP ===== -->
+      <div class="developer-strip">
+        <div class="developer-credit-text">
+          <i class="fas fa-code" style="color: var(--cyan);"></i> Built by <strong>Arham Ajaz</strong>
+        </div>
+        <div class="developer-links">
+          <a href="https://www.linkedin.com/in/arham-ajaz-8a4938314/" target="_blank" rel="noopener noreferrer" class="dev-link linkedin-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:arhamajaz18@gmail.com" class="dev-link mail-link">
+            <i class="fas fa-envelope"></i> Gmail
+          </a>
+        </div>
       </div>
     </footer>
 
